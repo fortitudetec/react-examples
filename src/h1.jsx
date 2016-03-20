@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default ( ) => {
-  return <h1>Doot Hello World</h1>;
+  return <h1>React Example</h1>;
 }
