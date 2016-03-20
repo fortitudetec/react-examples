@@ -2,4 +2,6 @@
 node_modules/
 typings/
 typings.json
-dist/bundle.js
+*.swp
+dist/*
+!dist/index.html
