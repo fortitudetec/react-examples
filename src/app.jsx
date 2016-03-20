@@ -2,12 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import H1 from './h1.jsx';
 import Button from "./button.jsx";
-import Dispatcher from "./dispatcher";
 import ExampleStore from "./example-store";
 import {Actions} from './actions';
-
-// require("font-awesome-webpack");
-require("./vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css")
+// require("./vendor/bootstrap-3.3.6-dist/css/bootstrap.css")
 
 const App = React.createClass({
       

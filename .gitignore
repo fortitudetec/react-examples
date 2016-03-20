@@ -5,3 +5,4 @@ typings.json
 *.swp
 dist/*
 !dist/index.html
+!dist/vendor

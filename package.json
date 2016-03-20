@@ -21,15 +21,17 @@
     "jest": "^0.1.40",
     "jest-cli": "^0.9.2",
     "babel-jest": "^9.0.3",
-    "react-addons-test-utils": "^0.14.7"
+    "react-addons-test-utils": "^0.14.7",
+    "webpack-babel-jest": "^1.0.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest ./src/__tests__",
+    "testdbg": "node debug --harmony ./node_modules/jest-cli/bin/jest.js --runInBand  "
   },
-  "jest": {    
-    "unmockedModulePathPatterns": ["./node_modules/react"],
-    "modulePathIgnorePatterns": ["./node_modules/"], 
-    "testPathIgnorePatterns": ["./node_modules/"]
+  "jest": {
+    "testPathDirs": ["./src/__tests__"],
+    "scriptPreprocessor": "./node_modules/webpack-babel-jest", 
+    "unmockedModulePathPatterns": ["/node_modules/react"]
   },
   "author": "Fortitude Technologies",
   "license": "ISC"
